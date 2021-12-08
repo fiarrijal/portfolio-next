@@ -1,0 +1,152 @@
+$yaleBlue: #084b83;
+$lightBlue: #edf7fa;
+$powderBlue: #bbe6e4;
+$cultured: #f0f6f6;
+$hotPink: #ff66b3;
+$darkGreen: #136223;
+
+.hero {
+	margin-top: 100px;
+	margin-bottom: 156px;
+
+	&_title {
+		color: $yaleBlue;
+		font-weight: 700;
+		font-size: 2.75rem;
+	}
+	&_profession {
+		font-size: 1.75rem;
+		font-style: italic;
+		margin-bottom: 1rem;
+		color: rgba($color: $yaleBlue, $alpha: 0.75);
+	}
+
+	&_image {
+		width: 300px;
+		border-radius: 50%;
+		box-shadow: -6px 13px 6px -5px $lightBlue;
+		-webkit-box-shadow: -6px 13px 6px -5px $lightBlue;
+		-moz-box-shadow: -6px 13px 6px -5px $lightBlue;
+	}
+}
+
+.profile {
+	background-color: $lightBlue;
+	padding: 20px 0 80px 0;
+
+	&_title {
+		color: $darkGreen;
+		font-weight: 600;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+}
+
+.contact {
+	margin-top: 100px;
+	margin-bottom: 156px !important;
+
+	&-list {
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+	}
+}
+
+.university {
+	&_title {
+		font-size: 0.875rem;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+
+	&_major {
+		font-size: 0.75rem;
+		font-style: italic;
+		margin-right: 1.5rem;
+	}
+
+	&_year {
+		font-size: 0.75rem;
+	}
+
+	&_description {
+		font-size: 0.75rem;
+		color: #52575c;
+	}
+}
+
+.project {
+	font-family: "Heebo", sans-serif !important;
+	&_image {
+		border-radius: 6px;
+		width: 100%;
+	}
+
+	&_title {
+		font-size: 1.875rem;
+		color: $yaleBlue;
+		font-weight: 700;
+	}
+
+	&_year {
+		background-color: #142850;
+		border-radius: 16px;
+		color: #fff;
+		font-weight: 600;
+		padding: 3px 12px;
+		margin-right: 20px;
+	}
+
+	&_category {
+		color: #8695a4;
+	}
+	&_description {
+		margin-top: 16px;
+
+		font-family: "Heebo", sans-serif !important;
+	}
+}
+
+.social_media {
+	list-style: none;
+
+	&_item {
+		display: inline;
+		margin: 0 10px;
+		font-size: 2rem;
+	}
+
+	&_link {
+		color: $yaleBlue;
+	}
+}
+
+.footer {
+	margin-top: 80px;
+	color: $yaleBlue;
+	font-family: "Heebo", sans-serif;
+	font-size: 0.875rem;
+}
+
+.tech_icon {
+	width: 30px;
+	height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+	.hero {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.hero {
+		&-image {
+			width: 75%;
+		}
+	}
+
+	.project-title {
+		margin-top: 1rem;
+	}
+}
