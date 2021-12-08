@@ -91,7 +91,7 @@ export default function index() {
 					{socials?.map((social) => {
 						return (
 							<li className={styles.social_media_item} key={social.key}>
-								<a href={social.link} target="_blank" className={social.btn_color}>
+								<a href={social.link} target="_blank" className={social.btn_color} rel="noopener noreferrer">
 									<i className={social.icon}></i>
 									<span className="ps-2">{social.name}</span>
 								</a>

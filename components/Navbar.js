@@ -5,7 +5,7 @@ export default function NavBar() {
 	return (
 		<Navbar bg="light" expand="lg">
 			<Container>
-				<Navbar.Brand href="#hero">Fauzan's Portfolio</Navbar.Brand>
+				<Navbar.Brand href="#hero">Fauzan&apos;s Portfolio</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ms-auto">
