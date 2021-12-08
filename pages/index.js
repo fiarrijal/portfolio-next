@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.scss";
 
 import heroImage from "../public/images/hero-image.jpg";
-import projectAPIImage from "../public/images/project-api.png";
 import NavBar from "../components/Navbar";
 
 // import hapiIcon from "../public/images/hapi-logo.svg";
@@ -22,7 +22,7 @@ export default function index() {
 			<Head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<script src="https://kit.fontawesome.com/5659d0154b.js" crossOrigin="anonymous"></script>
+				<Script src="https://kit.fontawesome.com/5659d0154b.js" crossOrigin="anonymous"></Script>
 			</Head>
 
 			<NavBar />
@@ -32,7 +32,7 @@ export default function index() {
 					<div className="row d-flex">
 						<div className="col-md-6 col-sm-12 order-2 order-sm-2 order-md-1 d-flex align-items-center text-sm-center mt-3 mt-sm-4 mt-md-0">
 							<div>
-								<h1 className={`${styles.hero_title} text-center text-sm-center text-md-start`}>Hi, I'm Fauzan</h1>
+								<h1 className={`${styles.hero_title} text-center text-sm-center text-md-start`}>Hi, I&apos;m Fauzan</h1>
 								<h1 className={`${styles.hero_profession} text-center text-sm-center text-md-start`}>I am Front-End Developer</h1>
 								<p className={`${styles.hero_text} text-center text-sm-center text-md-start`}>
 									I love to converting UI or Web design into an actual website. I also have a big interest in learning about technologies, especially about programming and information technologies.
@@ -67,14 +67,14 @@ export default function index() {
 											return (
 												<li className="d-inline-block me-4" key={stack.name}>
 													<div className="d-flex align-items-center">
-														<img src={stack.logo} className={`${styles.tech_icon} me-2`} />
+														<img src={stack.logo} className={`${styles.tech_icon} me-2`} alt="techstack" />
 														<span>{stack.name}</span>
 													</div>
 												</li>
 											);
 										})}
 									</ul>
-									<a href={item.link} target="_blank" className="btn btn-primary">
+									<a href={item.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
 										View Demo
 									</a>
 								</div>
@@ -86,7 +86,7 @@ export default function index() {
 
 			<section id="contact" className={`${styles.contact} text-center`}>
 				<h3 className={`${styles.profile_title} text-uppercase text-center mb-1`}>Get In Touch With Me</h3>
-				<span className="mb-5">Let's connect from this social media :</span>
+				<span className="mb-5">Let&apos;s connect from this social media :</span>
 				<ul className="ps-0 ms-0 mt-5">
 					{socials?.map((social) => {
 						return (
