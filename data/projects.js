@@ -14,6 +14,7 @@ export const projects = [
 		category: "Front End",
 		description: "A simple Qur'an app. It can show list surat and ayat, also we can search the specified ayat and its tafseer",
 		link: "https://quran-digital-eta.vercel.app",
+
 		techstack: [
 			{
 				logo: reactIcon,
@@ -77,23 +78,26 @@ export const projects = [
 export const socials = [
 	{
 		key: "linkedIn",
-		icon: "fab fa-linkedin",
+		icon: ["fab", "linkedin"],
 		name: "Fauzan Imam Arrijal",
 		link: "https://www.linkedin.com/in/fauzan-imam-arrijal-404720129/",
 		btn_color: "btn btn-primary",
+		img: "./images/linkedin-brands.svg",
 	},
 	{
 		key: "github",
-		icon: "fab fa-github",
+		icon: ["fab", "github"],
 		name: "fiarrijal",
 		link: "https://github.com/fiarrijal",
 		btn_color: "btn btn-dark",
+		img: "./images/github-brands.svg",
 	},
 	{
 		key: "email",
-		icon: "fas fa-envelope",
+		icon: ["fas", "envelope"],
 		name: "fi.arrijal@gmail.com",
-		link: "#",
+		link: "mailto:fi.arrijal@gmail.com",
 		btn_color: "btn btn-danger",
+		img: "./images/envelope-solid.svg",
 	},
 ];

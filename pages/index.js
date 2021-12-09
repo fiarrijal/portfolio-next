@@ -3,18 +3,19 @@ import Image from "next/image";
 import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.scss";
-
 import heroImage from "../public/images/hero-image.jpg";
 import NavBar from "../components/Navbar";
 
-// import hapiIcon from "../public/images/hapi-logo.svg";
-// import nodeIcon from "../public/images/node-js.svg";
-// import antdIcon from "../public/images/ant-design-logo.svg";
-// import reactIcon from "../public/images/reactjs-logo.png";
-// import bootstrapIcon from "../public/images/bootstrap-logo.png";
-// import tailwindIcon from "../public/images/tailwind-css.svg";
-
 import { projects, socials } from "../data/projects";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
+library.add(fab, fas, faEnvelope, faLinkedin, faGithub);
 
 export default function index() {
 	return (
@@ -22,7 +23,8 @@ export default function index() {
 			<Head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<Script src="https://kit.fontawesome.com/5659d0154b.js" crossOrigin="anonymous"></Script>
+
+				<title>Fauzan Portfolio</title>
 			</Head>
 
 			<NavBar />
@@ -40,7 +42,6 @@ export default function index() {
 							</div>
 						</div>
 						<div className="col-md-6 col-sm-12 order-1 order-sm-1 order-md-2 order-xs-1 d-flex justify-content-center align-items-center">
-							{/* <img src={heroImage} alt="Hero Image" className="hero-image" /> */}
 							<Image src={heroImage} alt="Hero" className={styles.hero_image} width={300} height={300} />
 						</div>
 					</div>
@@ -92,8 +93,8 @@ export default function index() {
 						return (
 							<li className={styles.social_media_item} key={social.key}>
 								<a href={social.link} target="_blank" rel="noopener noreferrer" className={social.btn_color}>
-									<i className={social.icon}></i>
-									<span className="ps-2">{social.name}</span>s
+									<FontAwesomeIcon icon={social.icon} className={styles.social_media_icon} />
+									<span className="ps-2">{social.name}</span>
 								</a>
 							</li>
 						);
